@@ -8,7 +8,7 @@ public class GreetingDemo {
 			String greet="Happy holidays";
 			return greet;
 		};
-		System.out.println(g1.sayHello());
+		System.out.println(g2.sayHello());
 		g1.greet();
 		Greeting.sayBye();
 		g1.call();

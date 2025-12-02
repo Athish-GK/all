@@ -19,7 +19,7 @@ public class FunctionalDemo {
 		Consumer<String> c1=(s)->System.out.println(s);
 		c1.accept("Hello");
 		
-		Consumer<String> c2=System.out::print;
+		Consumer<String> c2=System.out::println;
 		c2.accept("Bonjour");
 		
 		Consumer<String> c3=(s)->System.out.println(s);
