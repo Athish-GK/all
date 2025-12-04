@@ -1,0 +1,20 @@
+import java.util.*;
+ 
+public class SortedPerson {
+	public static void main(String[] args) {
+	
+		Comparator<Person> agecomp=(p1,p2)->p1.getAge()-p2.getAge();
+		Comparator<Person> nameComp=(p1,p2)->p1.getName().compareTo(p2.getName());
+		
+		TreeSet<Person> people = new TreeSet<Person>();
+		people.add(new Person("Pole", 21));
+		people.add(new Person("Jack", 22));
+		people.add(new Person("Lili", 23));
+		
+		for(Person p : people)
+			System.out.println(p);
+	}
+ 
+}
+ 
+ 
